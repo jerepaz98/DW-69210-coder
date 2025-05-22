@@ -1,0 +1,427 @@
+/* ------ body------- */
+body {
+  background-color: #ffffff;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado principal */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #d72638;
+}
+
+/* --- SECCIÓN HERO --- */
+.hero {
+  background-image: url('../img/img54.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  max-height: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 600px;
+}
+
+/* Bienvenida */
+
+.bienvenida {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.bienvenida img {
+  flex: 1 1 50%;
+  max-width: 570px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.bienvenida .text-container {
+  flex: 1 1 40%;
+  padding: 20px;
+}
+
+.bienvenida h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.bienvenida button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/* Contacto whatsapp */
+.whatsapp-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0f0f0f; /* color WhatsApp */
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #262927;
+}
+
+/* Galería tipo instagram index */
+.instagram-section {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.instagram-section h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0f0f0f;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.instagram-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-grid img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Imagen intro de otras paginas (galeria, servicios, sobre mi, contacto)*/
+.heromod {
+  background-image: url('../img/img54.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 30vh;
+  max-height: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.heromod img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 600px;
+}
+
+/*---- 2da pagina GALERIA ---*/
+/* --- CONTENIDO PRINCIPAL --- */
+h2 {
+  color: #444;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* --- IMÁGENES GENERALES --- */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  display: block;
+}
+
+/* --- GALERÍA ESTILO MASONRY (galeria.html) --- */
+.galeria.masonry {
+  column-count: 4;              /* Número de columnas en pantallas grandes */
+  column-gap: 90px;             /* Espacio horizontal entre columnas */
+  max-width: 1500px;
+  margin: 120px auto;
+  padding: 20px;                /* Espacio interno alrededor de la galería */
+}
+
+.galeria.masonry img {
+  width: 100%;
+  margin-bottom: 120px;          /* Espacio vertical entre imágenes */
+  break-inside: avoid;          /* Evita que la imagen se corte entre columnas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria.masonry img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* --- RESPONSIVE COLUMNS --- */
+@media (max-width: 900px) {
+  .galeria.masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria.masonry {
+    column-count: 1;
+  }
+}
+
+ 
+/* Servicios 
+  Inicio 
+  section {
+   padding: 20px;
+    display: flex;
+    margin: 20px auto;
+    height: 580px;
+    width: 90%;
+    max-width: 800px;
+  }*/
+.text-container {
+  /* Eliminar o ajustar el ancho si es necesario */
+  /* width: auto; */
+  flex-grow: 1; /* Permite que el contenedor de texto crezca */
+  margin-left: 20px; /* Agrega algo de espacio entre la imagen y el texto */
+}
+
+/* 
+section img {
+  margin-bottom: 0;
+  margin-right: 20px; 
+}*/
+
+/* Planes de Servicio */
+.planes-titulo {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.planes-tabla {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.plan-box {
+  vertical-align: top;
+  width: 33%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.plan-box h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.plan-precio {
+  color: #0066cc;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*------------------- Testimonios -----------------*/
+.testimonios-contenedor {
+  margin-top: 30px;
+}
+
+.testimonios-titulo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.testimonio {
+  margin: 10px 0;
+  padding-left: 15px;
+  border-left: 3px solid #999;
+  background-color: #f9f9f9;
+  font-style: italic;
+}
+
+.testimonio img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+  /*----------- Estilo del formulario ---------------*/
+  form {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 6px;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Botón del formulario */
+  button {
+    background-color: #d72638;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a41d2e;
+  }
+
+
+
+/* ------------------ Footer ---------------------*/
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: hsla(51.43,17.5%,84.31%,1);
+  color: rgb(16, 16, 16);
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.redes-sociales a {
+  display: inline-block;
+}
+
+.redes-sociales img {
+  width: 28px;
+  height: 28px;
+  transition: opacity 0.3s ease;
+}
+
+.redes-sociales img:hover {
+  opacity: 0.7;
+}
+
+
+.redes-sociales a img {
+  display: none; 
+}
+
+
+.redes-sociales a {
+  font-size: 24px; /* Tamaño de los iconos */
+  color: #333; 
+  text-decoration: none; 
+  margin: 0 5px; /* Espaciado entre iconos */
+  display: inline-block; 
+}
+
+/* Icono de Instagram */
+.redes-sociales a img[alt="Instagram"]::before {
+  font-family: "Font Awesome 6 Brands"; 
+  content: "\f16d"; 
+  display: inline-block; 
+}
+
+/* Icono de Facebook */
+.redes-sociales a img[alt="Facebook"]::before {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f09a"; 
+  display: inline-block;
+}
+
+/* Icono de WhatsApp */
+.redes-sociales a img[alt="WhatsApp"]::before {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f232"; 
+  display: inline-block;
+}
+
+/* Opcional: Cambiar color al pasar el mouse */
+.redes-sociales a:hover {
+    color: #007bff; 
+}
+.redes-sociales a img[alt="Instagram"]:hover::before {
+  color: #C13584; 
+}
+.redes-sociales a img[alt="Facebook"]:hover::before {
+  color: #3b5998; 
+}
+.redes-sociales a img[alt="WhatsApp"]:hover::before {
+  color: #25D366; 
+}
