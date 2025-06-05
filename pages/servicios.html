@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,23 @@
 
   <title>Servicios | Santiago Trejo Fotografía</title>
 
-  <!--Estilos-->
+  <!-- Estilos CSS -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../fonts/Helvetica Neue Regular.ttf">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!-- Icono de la página -->
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!--Titulo-->
-<header class="header">
+
+<!--Titulo-->
+<header class="header" id="top-menu">
   <div class="logo"><b>ST</b>| Studios</div>
   <nav class="nav">
     <!--Menu de Navegación-->
@@ -29,11 +38,13 @@
 </header>
 
 <section class="heromod">
-    <h1>Servicios</h1>
+    <h1 class="focus-in-expand">Servicios</h1>
 
 </section>
 
+<!---->
   <main>
+    <!--Texto curso eliminado
     <section class="servicios-lista">
       <h2>Servicios & Cursos</h2>
        <ul>
@@ -48,66 +59,162 @@
          <li>-Flujo de trabajo</li>
          <li>-Dinamicas y direcion con parejas</li>
        </ul> 
-    </section>
+    </section>-->
+
+    <section class="bienvenida">
+  <img src="../img/img20.webp" alt="Pareja de novios">
+  <div class="text-container">
+    <h2>Bienvenidos</h2>
+        <p>Siempre estoy disponible para poder comunicarnos directamente entre nosotros y podamos conocernos desde el principio. Estoy comprometido a capturar los momentos más significativos de tu vida con profesionalismo y creatividad.</p>
+  </div>
+</section>
   </main>
 
-  <!-- Planes de servicios -->
-  <section  class="planes-contenedor"> <!-- class="planes-contenedor"-->
-    <h2 class="planes-titulo">Planes disponibles</h2>
-    
-    <table class="planes-tabla">
-      <tr>
-        <td class="plan-box">
-          <h3>Plan Bronce</h3>
-          <p>Cobertura de ceremonia (2 horas)</p>
-          <p>30 fotos editadas</p>
-          <p>Entrega digital</p>
-          <p class="plan-precio">$80 USD</p>
-        </td>
-        <td class="plan-box">
-          <h3>Plan Plata</h3>
-          <p>Cobertura completa del evento (5 horas)</p>
-          <p>80 fotos editadas</p>
-          <p>Álbum digital + entrega física</p>
-          <p class="plan-precio">$180 USD</p>
-        </td>
-        <td class="plan-box">
-          <h3>Plan Oro</h3>
-          <p>Cobertura total + sesión pre-boda</p>
-          <p>150 fotos editadas + álbum premium</p>
-          <p>Video resumen HD del evento</p>
-          <p class="plan-precio">$300 USD</p>
-        </td>
-      </tr>
-    </table>
-  </section>
-
-    <!--testimonios-->
-  <section class="heromod">
-    <h1>Testimonios</h1>
+  
+<!-- Planes de servicios -->
+<section  class=" planes-contenedor fond-heromod"> <!-- class="planes-contenedor"-->
+<h2 class="planes-titulo">Planes disponibles</h2>
+<div class="planes-wrapper">
+  <div class="plan-card">
+    <span class="numero">01</span>
+    <h3>Plan Bronce</h3>
+    <p>Cobertura de ceremonia (2 horas)</p>
+    <p>30 fotos editadas</p>
+    <p>Entrega digital</p>
+    <span class="precio">$80 USD</span>
+  </div>
+  <div class="plan-card">
+    <span class="numero">02</span>
+    <h3>Plan Plata</h3>
+    <p>Cobertura completa del evento (5 horas)</p>
+    <p>80 fotos editadas</p>
+    <p>Álbum digital + entrega física</p>
+    <span class="precio">$180 USD</span>
+  </div>
+  <div class="plan-card">
+    <span class="numero">03</span>
+    <h3>Plan Oro</h3>
+    <p>Cobertura total + sesión pre-boda</p>
+    <p>150 fotos editadas + álbum premium</p>
+    <p>Video resumen HD del evento</p>
+    <span class="precio">$300 USD</span>
+  </div>
+  <div class="plan-card">
+    <span class="numero">04</span>
+    <h3>Plan Diamante</h3>
+    <p>Cobertura completa (todo el día)</p>
+    <p>200 fotos editadas + álbum de lujo</p>
+    <p>Video completo del evento + sesión post-boda</p>
+    <span class="precio">$500 USD</span>
+</div>
 </section>
 
-  <section class="testimonios-contenedor">
-    <h2 class="testimonios-titulo"></h2>
-  
-    <div class="testimonio">
-      <img src="../img/wedding.png" alt="Icono persona" width="24" height="24">
-      <p>“Las fotos de nuestra boda fueron mágicas. ¡Gracias Santiago!”</p>
-      <p><strong>- Ana y Tomás</strong></p>
+
+<!-- seccion final -->
+<section>
+<div class="section-container">
+  <div class="text-content">
+    <h1>TU HISTORIA <br> EN UNA IMAGEN</h1>
+    <p>
+     CAPTURAR ES DETENER EL ALMA DE UN INSTANTE<br>
+      UN SUSPIRO, UNA EMOCIÓN, UNA VERDAD<br><br>
+      BUSCO QUE CADA IMAGEN HABLE POR SÍ SOLA<br>
+      NO HAGO FOTOS CREO MEMORIAS
+    </p>
+    <button>Hazlo</button>
+  </div>
+
+  <div class="image-content">
+    <img src="../img/img07.webp" alt="Pareja feliz" class="image-main">
+    <img src="../img/img01.webp" alt="Zapatos" class="image-overlay">
+  </div>
+</div>
+</section>
+
+<!--testimonios-->
+<!-- class="testimonios"-->
+<section>
+<div class="container py-5">
+  <!-- Rating Header -->
+  <div class="rating-header mb-5">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/320px-Google_2015_logo.svg.png" width="28" alt="Google">
+    <strong class="ms-2 me-2 fs-5">Rating</strong>
+    <span class="text-warning fw-bold fs-5">4.9 ★★★★★</span>
+    <span class="text-secondary ms-2">(Basado en 59 reseñas)</span>
+    <a href="#" class="btn btn-primary btn-sm ms-3">Escribe una reseña</a>
+  </div>
+
+  <!-- Reseñas -->
+  <div class="row g-4">
+    <!-- Review 1 -->
+    <div class="col-md-4">
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/100?img=21" class="profile-pic" alt="Cliente 1">
+        <h5>Laura Martínez</h5>
+        <div class="star-rating mb-1">★★★★★</div>
+        <small class="text-muted mb-2 d-block">15 de abril de 2025</small>
+        <p>"¡Las fotos de nuestra boda quedaron espectaculares! Capturaste cada momento mágico."</p>
+      </div>
     </div>
-  
-    <div class="testimonio">
-      <img src="../img/wedding.png" alt="Icono persona" width="24" height="24">
-      <p>“Muy profesional, llegó puntual y capturó los mejores momentos.”</p>
-      <p><strong>- Camila G.</strong></p>
+
+    <!-- Review 2 -->
+    <div class="col-md-4">
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/100?img=24" class="profile-pic" alt="Cliente 2">
+        <h5>Carlos Gómez</h5>
+        <div class="star-rating mb-1">★★★★★</div>
+        <small class="text-muted mb-2 d-block">10 de marzo de 2025</small>
+        <p>"Profesionalismo total. Supo cómo hacernos sentir cómodos en nuestra sesión de compromiso."</p>
+      </div>
     </div>
-  
-    <div class="testimonio">
-      <img src="../img/wedding.png" alt="Icono persona" width="24" height="24">
-      <p>“Quedamos encantados con el álbum final. Super recomendable.”</p>
-      <p><strong>- Laura & Martín</strong></p>
+
+    <!-- Review 3 -->
+    <div class="col-md-4">
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/100?img=17" class="profile-pic" alt="Cliente 3">
+        <h5>Sofía Herrera</h5>
+        <div class="star-rating mb-1">★★★★★</div>
+        <small class="text-muted mb-2 d-block">28 de enero de 2025</small>
+        <p>"Gracias por inmortalizar el bautizo de nuestra hija. ¡Las fotos son un tesoro para siempre!"</p>
+      </div>
     </div>
-  </section>
+
+    <!-- Review 4 -->
+    <div class="col-md-4">
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/100?img=30" class="profile-pic" alt="Cliente 4">
+        <h5>Mariana Ruiz</h5>
+        <div class="star-rating mb-1">★★★★★</div>
+        <small class="text-muted mb-2 d-block">2 de febrero de 2025</small>
+        <p>"El mejor fotógrafo de eventos que hemos tenido. ¡Captura emociones de verdad!"</p>
+      </div>
+    </div>
+
+    <!-- Review 5 -->
+    <div class="col-md-4">
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/100?img=37" class="profile-pic" alt="Cliente 5">
+        <h5>Julián Torres</h5>
+        <div class="star-rating mb-1">★★★★★</div>
+        <small class="text-muted mb-2 d-block">20 de diciembre de 2024</small>
+        <p>"Excelente servicio y calidad en cada toma. ¡100% recomendado!"</p>
+      </div>
+    </div>
+
+    <!-- Review 6 -->
+    <div class="col-md-4">
+      <div class="review-card">
+        <img src="https://i.pravatar.cc/100?img=41" class="profile-pic" alt="Cliente 6">
+        <h5>Ana Beltrán</h5>
+        <div class="star-rating mb-1">★★★★★</div>
+        <small class="text-muted mb-2 d-block">5 de noviembre de 2024</small>
+        <p>"Supo encontrar la luz perfecta para cada foto. ¡Una mirada artística increíble!"</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
 
   <!--Foooter-->
    <footer class="footer">
@@ -123,6 +230,13 @@
                 <i class="fab fa-whatsapp" title="WhatsApp"></i>
             </a>
         </div>
+
+        <!-- Botón de desplazamiento hacia arriba -->
+        <a href="#top-menu" class="scroll-up-arrow">
+            <i class="fas fa-arrow-circle-up"></i> </a>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

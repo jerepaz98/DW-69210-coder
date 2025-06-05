@@ -4,13 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio | Trejo Studios</title>
+
+  <!-- Estilos CSS -->
   <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./fonts/Helvetica Neue Regular.ttf">
+
+  <!-- Icono de la página -->
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header class="header">
+  <!--Loader efecto, retrasa la pagina ver en espera
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>-->
+  <!--Titulo-->
+  <header class="header" id="top-menu">
     <div class="logo"><b>ST</b>| Studios</div>
     <nav class="nav">
+      <!--Menu de Navegación-->
       <ul class="menu">
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./pages/galeria.html">Galería</a></li>
@@ -22,15 +36,15 @@
   </header>
 
   <section class="hero">
-    <h1>DOCUMENTARY &nbsp | &nbsp WEDDING &nbsp | &nbsp PHOTOGRAPHY</h1>
-<!-- Flecha hacia abajo, no agregada en el HTML
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-bar-down" viewBox="0 0 16 16" class="down-arrow">
-  <path fill-rule="evenodd" d="M3.646 4.146a.5.5 0 0 1 .708 0L8 7.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708M1 11.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
-</svg>-->
+    <!-- Título de la sección -->
+    <h1 class="focus-in-expand">DOCUMENTARY &nbsp | &nbsp WEDDING &nbsp | &nbsp PHOTOGRAPHY</h1>
+    <!-- Contenido adicional de la sección -->
+    <a href="#main-content" class="scroll-down-arrow">
+      <i class="fas fa-chevron-down"></i> </a>
   </section>
 
 <main>
-<section class="bienvenida">
+<section id="main-content" class="bienvenida">
   <img src="./img/img09.webp" alt="Pareja de novios">
   <div class="text-container">
     <h2>Bienvenidos</h2>
@@ -71,6 +85,10 @@
                 <i class="fab fa-whatsapp" title="WhatsApp"></i>
             </a>
         </div>
+
+        <!-- Botón de desplazamiento hacia arriba -->
+        <a href="#top-menu" class="scroll-up-arrow">
+            <i class="fas fa-arrow-circle-up"></i> </a>
     </footer>
   </body>
 </html>

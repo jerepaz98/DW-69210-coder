@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,23 @@
 
   <!--Estilos-->
   <link rel="stylesheet" href="../css/style.css">
+
+  <!--fuentes-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../fonts/Helvetica Neue Regular.ttf">
+
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--Icono de la página-->
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
 </head>
 <body>
-  <!--Titulo-->
-<header class="header">
+  
+<!--Titulo-->
+<header class="header" id="top-menu">
   <div class="logo"><b>ST</b>| Studios</div>
   <nav class="nav">
     <!--Menu de Navegación-->
@@ -29,44 +40,44 @@
 </header>
 
 <section class="heromod">
-    <h1>Galeria</h1>
+    <h1 class="focus-in-expand">Galeria</h1>
 </section>
 
   <main>
     <!--Galeria-->
     <section>
       <h2>FASHION EDITORIAL</h2>
-      <div class="galeria masonry">
-        <img src="../img/img01.webp" alt="Foto 1">
-        <img src="../img/img61.jpg" alt="Foto 2">
-        <img src="../img/img13.webp" alt="Foto 3">
-        <img src="../img/img17.webp" alt="Foto 4">
-        <img src="../img/img20.webp" alt="Foto 5">
-        <img src="../img/img24.jpg" alt="Foto 6">
-        <img src="../img/img27.jpg" alt="Foto 7">
-        <img src="../img/img30.jpg" alt="Foto 8">
-        <img src="../img/img26.jpg" alt="Foto 9">
-        <img src="../img/img08.webp" alt="Foto 10">
-        <img src="../img/img10.webp" alt="Foto 11">
-        <img src="../img/img31.jpg" alt="Foto 12">
-        <img src="../img/img11.webp" alt="Foto 13">
-        <img src="../img/img51.jpg" alt="Foto 14">
-        <img src="../img/img35.jpg" alt="Foto 15">
-        <img src="../img/img22.webp" alt="Foto 1">
-        <img src="../img/img46.webp" alt="Foto 2">
-        <img src="../img/img18.webp" alt="Foto 3">
-        <img src="../img/img52.jpg" alt="Foto 4">
-        <img src="../img/img45.webp" alt="Foto 5">
-        <img src="../img/img25.jpg" alt="Foto 6">
-        <img src="../img/img67.jpg" alt="Foto 7">
-        <img src="../img/img64.jpg" alt="Foto 8">
-        <img src="../img/img34.jpg" alt="Foto 9">
-        <img src="../img/img63.jpg" alt="Foto 10">
-        <img src="../img/img07.webp" alt="Foto 11">
-        <img src="../img/img44.webp" alt="Foto 12">
-        <img src="../img/img21.webp" alt="Foto 13">
-        <img src="../img/img66.jpg" alt="Foto 14">
-        <img src="../img/img68.jpg" alt="Foto 15">
+      <div class="galeria masonry"> 
+        <img src="../img/img01.webp" alt="Foto 1" data-aos="zoom-in-up">
+        <img src="../img/img61.jpg" alt="Foto 2" data-aos="zoom-in-up">
+        <img src="../img/img13.webp" alt="Foto 3" data-aos="zoom-in-up">
+        <img src="../img/img17.webp" alt="Foto 4"data-aos="zoom-in-up">
+        <img src="../img/img20.webp" alt="Foto 5" data-aos="zoom-in-up">
+        <img src="../img/img24.jpg" alt="Foto 6 "data-aos="zoom-in-up">
+        <img src="../img/img27.jpg" alt="Foto 7" data-aos="zoom-in-up">
+        <img src="../img/img30.jpg" alt="Foto 8" data-aos="zoom-in-up">
+        <img src="../img/img26.jpg" alt="Foto 9" data-aos="zoom-in-up">
+        <img src="../img/img08.webp" alt="Foto 10 "data-aos="zoom-in-up">
+        <img src="../img/img10.webp" alt="Foto 11" data-aos="zoom-in-up">
+        <img src="../img/img31.jpg" alt="Foto 12" data-aos="zoom-in-up">
+        <img src="../img/img11.webp" alt="Foto 13" data-aos="zoom-in-up">
+        <img src="../img/img51.jpg" alt="Foto 14" data-aos="zoom-in-up">
+        <img src="../img/img35.jpg" alt="Foto 15" data-aos="zoom-in-up">
+        <img src="../img/img22.webp" alt="Foto 1" data-aos="zoom-in-up">
+        <img src="../img/img46.webp" alt="Foto 2" data-aos="zoom-in-up">
+        <img src="../img/img18.webp" alt="Foto 3" data-aos="zoom-in-up">
+        <img src="../img/img52.jpg" alt="Foto 4" data-aos="zoom-in-up">
+        <img src="../img/img45.webp" alt="Foto 5" data-aos="zoom-in-up">
+        <img src="../img/img25.jpg" alt="Foto 6" data-aos="zoom-in-up">
+        <img src="../img/img67.jpg" alt="Foto 7" data-aos="zoom-in-up">
+        <img src="../img/img64.jpg" alt="Foto 8" data-aos="zoom-in-up">
+        <img src="../img/img34.jpg" alt="Foto 9" data-aos="zoom-in-up">
+        <img src="../img/img63.jpg" alt="Foto 10" data-aos="zoom-in-up">
+        <img src="../img/img07.webp" alt="Foto 11" data-aos="zoom-in-up">
+        <img src="../img/img44.webp" alt="Foto 12" data-aos="zoom-in-up">
+        <img src="../img/img21.webp" alt="Foto 13" data-aos="zoom-in-up">
+        <img src="../img/img66.jpg" alt="Foto 14" data-aos="zoom-in-up">
+        <img src="../img/img68.jpg" alt="Foto 15" data-aos="zoom-in-up">
       </div>
     </section>
   </main>
@@ -85,6 +96,18 @@
                 <i class="fab fa-whatsapp" title="WhatsApp"></i>
             </a>
         </div>
+
+        <!-- Botón de desplazamiento hacia arriba -->
+        <a href="#top-menu" class="scroll-up-arrow">
+            <i class="fas fa-arrow-circle-up"></i> </a>
     </footer>
+
+<!-- Scripts -->
+ <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
 </body>
 </html>

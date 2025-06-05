@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,20 @@
 
   <title>Contacto | Santiago Trejo Fotografía</title>
 
-  <!--Estilos-->
+   <!-- Estilos CSS -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../fonts/Helvetica Neue Regular.ttf">
+
+  <!-- Icono de la página -->
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!--Titulo-->
-<header class="header">
+  
+<!--Titulo-->
+<header class="header" id="top-menu">
   <div class="logo"><b>ST</b>| Studios</div>
   <nav class="nav">
     <!--Menu de Navegación-->
@@ -29,7 +35,7 @@
 </header>
 
  <section class="heromod">
-    <h1>Contacto</h1>
+    <h1 class="focus-in-expand">Contacto</h1>
   </section>
 
   <!-- Presupuesto -->
@@ -47,21 +53,40 @@
     <h2 style="color: aliceblue;">Contacto</h2>
   </section>
 
-    <section>
+  
       <!-- <h2>Contacto</h2> -->
-      <form action="#" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+  <section class="formulario-crecimiento">
+    <div class="contact-text">
+      <h1>Es tiempo de crecer ahora mismo.</h1>
+      <p>¡Voy a asegurarme que pases al siguiente nivel!</p>
+    </div>
 
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellidos</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+        </div>
+      </div>
 
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+      <div class="form-group">
+        <label for="email">Email <span style="font-weight: normal;">(obligatorio)</span></label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+      </div>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+      <div class="form-group">
+        <label for="mensaje">Cuéntame qué te gustaría aprender</label>
+        <small>Aquí puedes compartirme tu experiencia, web, Instagram...</small>
+        <textarea id="mensaje" name="mensaje" placeholder="Todo sobre tus expectativas de crecimiento y lo que te gustaría aprender"></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Enviar</button>
+    </form>
+  </section>
   </main>
 
   <!--Foooter-->
@@ -78,6 +103,10 @@
                 <i class="fab fa-whatsapp" title="WhatsApp"></i>
             </a>
         </div>
+
+        <!-- Botón de desplazamiento hacia arriba -->
+        <a href="#top-menu" class="scroll-up-arrow">
+            <i class="fas fa-arrow-circle-up"></i> </a>
     </footer>
   </body>
 </html>

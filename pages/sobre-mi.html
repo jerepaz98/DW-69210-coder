@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,20 @@
 
   <title>Sobre mí | Santiago Trejo Fotografía</title>
   
-  <!--Estilos-->
+ <!-- Estilos CSS -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../fonts/Helvetica Neue Regular.ttf">
+
+  <!-- Icono de la página -->
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!--Titulo-->
-<header class="header">
+
+<!--Titulo-->
+<header class="header" id="top-menu">
   <div class="logo"><b>ST</b>| Studios</div>
   <nav class="nav">
     <!--Menu de Navegación-->
@@ -29,22 +35,31 @@
 </header>
 
 <section class="heromod">
-    <h1>Sobre mí</h1> <!-- ver de poner en ingles mas adelante -->
+    <h1 class="focus-in-expand">Sobre mí</h1> <!-- ver de poner en ingles mas adelante -->
 </section>
 
   <main>
     <!--Datos del fotografo-->
- <section class="bienvenida">
+ <section class="iam">
   <img src="../img/santi-trejo.jpg" alt="Santiago Trejo" width="300">
     <div class="text-container">
     <!--<h2>Sobre mí</h2>-->
-      <p>Hola, soy Santiago Trejo, fotógrafo apasionado por capturar historias de amor a través de mi lente. Con más de 10 años de experiencia, transformo momentos únicos en recuerdos eternos.</p>
+      <p>Hola, soy <strong>Santiago Trejo</strong>, fotógrafo profesional desde hace más de una década.
+Mi camino comenzó entre luces y sombras, entrenando el ojo para detectar esa fracción de segundo en la que todo se alinea: la luz perfecta, la emoción sincera y la verdad del momento.</p>
+
+<p> A lo largo de los años, he tenido el privilegio de trabajar con celebridades, familias y parejas de todo el mundo. Cada rostro, cada historia, me desafía a contarla con honestidad y belleza.</p>
+<p>He documentado bodas íntimas y eventos de gran escala, siempre con la misma dedicación: que cada fotografía sea un testimonio vivo, auténtico y eterno.</p>
+
+<p>Mi trabajo ha sido publicado en medios nacionales e internacionales, y he sido reconocido por mi estilo documental y estética sutil. Pero más allá de los premios, lo que realmente me importa es que cada persona que se para delante de mi cámara se sienta vista, respetada y recordada como se merece.</p>
+
+<p>No creo en poses vacías ni en fotografías de relleno. Creo en capturar lo real. Lo íntimo. Lo inolvidable.
+Cada proyecto es una nueva oportunidad de escuchar, conectar y transformar un instante en memoria.</p>
     <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">Aqui estoy!</a>
     </div>
   </section>
 
 
-  <section class="heromod">
+  <section class="fondo-heromod">
     <h2 class="ubicacion-titulo" style="color: aliceblue;">Ubicación del estudio</h2> <!--ver de poner en ingles mas adelante -->
 </section>
 
@@ -54,7 +69,7 @@
       <div class="text-container">
       <!--<h2 class="ubicacion-titulo">Ubicación del estudio</h2>-->
       <p class="ubicacion-texto">Podés encontrarnos en nuestra dirección:</p>
-      <p class="ubicacion-texto"><strong>Av. Ficticia 123, Ciudad Ejemplo</strong></p>
+      <p class="ubicacion-texto"><strong>Tucumán 2511, Rosario, Santa Fe, Argentina</strong></p>
     </div>
     </section>
   </main>
@@ -73,6 +88,10 @@
                 <i class="fab fa-whatsapp" title="WhatsApp"></i>
             </a>
         </div>
+
+        <!-- Botón de desplazamiento hacia arriba -->
+        <a href="#top-menu" class="scroll-up-arrow">
+            <i class="fas fa-arrow-circle-up"></i> </a>
     </footer>
   </body>
 </html>
