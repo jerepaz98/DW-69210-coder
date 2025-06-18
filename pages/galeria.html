@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,11 @@
 
   <title>Galería | Santiago Trejo Fotografía</title>
 
-  <!--Estilos-->
+  <!-- Estilo CSS-->
   <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Estilo SASS-->
+  <link rel="stylesheet" href="../scss/style.scss">
 
   <!--fuentes-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,22 +24,40 @@
   <!--Icono de la página-->
   <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
+ <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 </head>
 <body>
-  
-<!--Titulo-->
-<header class="header" id="top-menu">
-  <div class="logo"><b>ST</b>| Studios</div>
-  <nav class="nav">
-    <!--Menu de Navegación-->
-    <ul class="menu">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../pages/galeria.html">Galería</a></li>
-      <li><a href="../pages/servicios.html">Servicios</a></li>
-      <li><a href="../pages/sobre-mi.html">Sobre mí</a></li>
-      <li><a href="../pages/contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+<!--HEADER-->
+<header class="container-fluid d-flex justify-content-between align-items-center px-3 py-2 border-bottom" id="top-menu">
+  <!-- Logo -->
+  <div class="logo fw-bold">
+    <b>ST</b>| Studios
+  </div>
+
+  <!-- Botón hamburguesa siempre visible (mobile y desktop) -->
+  <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+    <i class="bi bi-list fs-2"></i>
+  </button>
+
+  <!-- Menú lateral Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasMenuLabel">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav text-end">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/galeria.html">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/sobre-mi.html">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
 </header>
 
 <section class="heromod">
@@ -46,7 +67,7 @@
   <main>
     <!--Galeria-->
     <section>
-      <h2>FASHION EDITORIAL</h2>
+      <h2 class="focus-in-expand titulo-galeria-h2">FASHION EDITORIAL</h2>
       <div class="galeria masonry"> 
         <img src="../img/img01.webp" alt="Foto 1" data-aos="zoom-in-up">
         <img src="../img/img61.jpg" alt="Foto 2" data-aos="zoom-in-up">
@@ -102,12 +123,17 @@
             <i class="fas fa-arrow-circle-up"></i> </a>
     </footer>
 
-<!-- Scripts -->
+<!-- AOS -->
  <script>
     AOS.init({
       duration: 1200,
       once: true
     });
   </script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </body>
 </html>

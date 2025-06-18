@@ -1,0 +1,70 @@
+/* 2da pagina GALERIA*/
+@use "variables" as variable;
+
+/*Efecto Imagen Galeria*/
+.focus-in-expand{-webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+/* --- ESTILOS GENERALES --- */
+h2 {
+  color: variable.$onyx;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.titulo-galeria-h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 7rem 0;
+  padding: 5rem 0.5rem;
+  //box-sizing: border-box;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* --- IMÁGENES GENERALES --- */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  display: block;
+}
+/* --- GALERÍA TIPO MASONRY --- */
+.galeria.masonry {
+  column-count: 4;              /* Número de columnas en pantallas grandes */
+  column-gap: 90px;             /* Espacio horizontal entre columnas */
+  max-width: 1500px;
+  margin: 120px auto;
+  padding: 20px;                /* Espacio interno alrededor de la galería */
+}
+
+.galeria.masonry img {
+  width: 100%;
+  margin-bottom: 120px;          /* Espacio vertical entre imágenes */
+  break-inside: avoid;          /* Evita que la imagen se corte entre columnas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria.masonry img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* --- RESPONSIVE COLUMNS --- */
+@media (max-width: 900px) {
+  .galeria.masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria.masonry {
+    column-count: 1;
+  }
+}
