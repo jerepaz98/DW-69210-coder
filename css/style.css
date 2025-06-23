@@ -141,7 +141,7 @@
   text-align: center;
   padding: 20px;
   height: 300px;
-  background-image: url(../img/img57.jpg);
+  background-image: url(../img/img01.webp);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -249,7 +249,7 @@ h2 {
 }
 
 .titulo-galeria-h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   margin: 7rem 0;
   padding: 5rem 0.5rem;
